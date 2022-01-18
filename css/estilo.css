@@ -1,0 +1,780 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    height: 100px;
+    background-color: black;
+    overflow: hidden;
+    display:block
+}
+header .redes{
+    margin-left: 10px;
+    margin-top: 10px;   
+    display:flex;
+}
+header .redes img{
+    margin-top: -5px;
+    width: 20px;
+}
+header .redes ul li{
+    display:flex;
+    display: inline;
+    margin-left: 10px;
+}
+header div.header ul li a{
+    margin-left: 0px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    color: white;
+    list-style: none;    
+}
+header div.header{
+    margin-left: 80%;
+    padding-inline: 50px;
+    margin-top: -45px;
+}
+header div.header ul li {
+    display: inline-block;
+    list-style: none; 
+}
+header div.header ul li a:hover {
+    background-color: rgb(86, 95, 230);
+}
+header div.carrito img{
+    width: 20px;
+}
+header div.carrito {
+    margin-right: 15px;
+}
+#logo {
+    background-color: black
+}
+#logo {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+#publicidad h1{
+    color: white;
+    margin-top: -60px;
+    margin-left: 37%; 
+    font-family: monospace;
+    font-size: 20px;
+}
+#carrito-buscar{
+    display: flex;
+    margin-left: 80%;
+    margin-top: 5px;
+}
+nav.menu{
+    margin-top: -35px;
+}
+nav.menu ul {
+    display:flex;
+    list-style-type:none;
+    text-align: center;
+    background-color: #0f45dd;
+    padding: 10px 10px 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+nav.menu ul li{
+    width: 400px;
+    margin-left: 15px;
+    
+}
+nav.menu ul li a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-decoration: none;
+}
+nav.menu ul li a:hover{
+    background-color: rgb(86, 95, 230);
+}
+.menu-celu {
+    display: none;
+    margin-top: 25px;
+    margin-left:40%
+}
+.menu-celu li a { 
+    font-family:sans-serif;
+    font-weight: bolder;
+	text-decoration: none;
+	color: #c67c00;
+}
+.menu-celu li {
+    margin-top: 10px;
+}
+.menu-celu li>ul { 
+    display: none; 
+}
+.menu-celu li:hover>ul { 
+    display: block;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+    position:relative;
+}
+footer ul{
+    list-style-type: none;
+    display: inline;
+}
+footer div#logo-footer{
+   flex-direction: row;
+
+   margin-top: 20px;
+}
+footer div#logo-footer img {  
+    width: 80%;
+}
+footer .direccion  {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 90px;
+    flex-direction: row;
+}
+footer .contacto  {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    margin-left: 250px;
+    margin-top: 90px;
+    flex-direction: row;
+}
+footer .redes  {
+    margin-left: 150px;
+    margin-top: 100px;
+    display:flex;
+    flex-direction: row;
+}
+footer .redes img{
+    width: 20px;
+    margin-top: 5px;
+    
+}
+footer .redes ul li{
+    display: inline;
+    margin-left: 10px;  
+}
+
+/*index*/
+section.carousel img{
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    margin-left: 0;
+}
+.frase p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25%; 
+    font-family: monospace;
+    font-size: 20px;
+    color:rgb(232, 235, 243);
+}
+.contenedor{
+    display:grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "foto1 foto2";
+}
+.contenedor img{
+    width: 100%;
+    height:486px;
+    margin-bottom: unset;
+}
+.contenedor1{
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image:"..img/galeria1.jpg";
+    grid-area: foto1;
+    width: 100%;
+}
+.contenedor2{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+body.colorfondo{
+    background-color: rgb(30, 35, 51);
+}
+
+/*ofertas*/
+body{
+    background-color: white;
+}
+main h2{
+    margin-left: 30px; 
+}
+main h3{
+    margin-left: 30px; 
+}
+main section img{
+    margin-left: 15vw;
+}
+
+/*productos*/
+main h2{
+    margin-left: 30px;
+}
+main h3{
+    margin-left: 30px;
+}
+body{
+    background-color: white;
+}
+#mercaderia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;         
+}
+.mercaderia{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.mercaderia p{
+    margin-bottom: 3px;
+    font-weight:bold;
+    margin-left: 20%;
+}
+#mercaderia img{
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+}
+
+/*galeria*/
+body{
+    background-color: white;
+}
+main h2{
+    margin-left: 30px;
+}
+#galeria img{
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+}
+#galeria{
+    display:grid;
+    width: 100%;
+    height: 1000px;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    grid-template-areas: "foto1 foto2"
+                         "foto4 foto3";
+    justify-content: space-evenly;
+    align-content: space-around;          
+}
+.galeria1 img{
+    background-image:"..img/galeria1.jpg";
+    grid-area: foto1;
+    width: 100%;
+
+}
+.galeria2 img {
+    background-image:"..img/galeria2.jpg";
+    grid-area: foto2;
+    width: 100%;
+}
+.galeria3 img {
+    background-image:"..img/galeria3.jpg";
+    grid-area: foto3;
+    width: 100%;
+}
+.galeria4 img{
+    background-image:"..img/galeria4.jpg";
+    grid-area: foto4;
+    width: 100%;
+}
+
+/*contacto*/
+body{
+    background-color: white;
+}
+header div.header ul li a:hover{
+    background-color: rgb(86, 95, 230);
+}
+section.horarios{
+    float:right;
+    width: 50%;
+    margin-top: -20vh;
+    text-align: center;
+    font-weight: 900; 
+}
+section.formulario{
+   margin-left: 5vw;
+}
+section#titulo{
+    margin-left: 2vw;
+}
+section.mapa iframe{
+    border:0;
+    height: 300px;
+    width: 100%;
+}
+section.mapa{
+    position:relative;
+    display: inline-relative;
+    margin-top: 5%;
+}
+section.mapa p{
+    margin-bottom: 1%;
+    margin-left: 2vw;
+}
+
+/* responsivo */ 
+@media only screen and ( max-width:600px){
+    *{
+        padding-top: 1px;
+        padding-left: 0px;
+    }
+    header{
+        overflow: visible;
+        height: 450px;
+    }
+    header div.header{
+        margin-left:0px;
+        margin-top: 0px;
+    }
+    header .redes img{
+        padding-top: 1vh;
+        width: 20px;
+    }
+    .menu-celu {
+        display: block;
+    }
+    #publicidad h1{
+        margin-top: 1vh;
+        margin-left: 12%;
+    }
+    header ul{
+        margin-top: 1vh;
+        margin-left: 20vw;
+    }
+    header .redes ul li{
+        margin-top: 0px;
+    }
+    header .redes ul li{
+        display: inline;
+    }
+    header div.header ul li a{
+        margin-left: 0px; 
+        list-style: none;    
+    }
+    #carrito-buscar{
+        margin-left: 25vw;
+        margin-top: 2vh;
+    }
+    .menu{
+        display: none;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:unset;
+        height:unset;
+        margin-top:unset;
+    }
+    footer div#logo-footer{
+        flex-direction: column;
+    }
+    footer .direccion {
+        margin-top: 3vh;
+        margin-left: 35vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .contacto {
+        margin-left: 15vw;
+        margin-top: 3vh;
+        flex-direction: column;
+    }
+    footer .redes {
+        margin-left: 0px;
+        margin-top: 0px;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30vw;
+    }
+    footer ul{
+        list-style-type: none;
+        display: inline;
+    }
+    footer div#logo-footer img {
+        width:150px;
+    }
+    #galeria {
+        height: 100%;
+    }
+    #galeria img {
+        height: 200px
+    }
+    section.carousel img{
+        width: 100%;
+        height: 300px;
+    }
+    .contenedor img{
+        width: 100%;
+        height: unset;
+        margin-bottom: unset;
+    }
+    main section img{
+        margin-left: unset;
+        width:100%;
+    }
+    .centrado{
+        font-size: 30px;
+    }
+    #galeria{
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "foto1"
+                             "foto2"
+                             "foto3"
+                             "foto4";
+    }
+    .contenedor{
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "foto1"
+                             "foto2";
+        justify-content: space-evenly;
+        align-content: space-around;          
+    }
+    section.mapa {
+        margin-bottom: unset;
+    }
+    .frase p {
+        margin-left: 4%;
+    }
+}
+@media only screen and ( min-width: 600px) and ( max-width: 768px){
+    *{
+        padding-top: 1px;
+        padding-left: 0px;
+    }
+    header{
+        overflow: visible;
+        height: 450px;
+    }
+    header div.header{
+        margin-left:0px;
+        margin-top: 0px;
+    }
+    header .redes img{
+        padding-top: 1vh;
+        width: 20px;
+    }
+    .menu-celu {
+        display: block;
+    }
+    #publicidad h1{
+        margin-top: 1vh;
+        margin-left: 28%;
+    }
+    header ul{
+        margin-top: 1vh;
+        margin-left: 30vw;
+    }
+    header .redes ul li{
+        margin-top: 0px;
+    }
+    header .redes ul li{
+        display: inline;
+    }
+    header div.header ul li a{
+        margin-left: 0px; 
+        list-style: none;    
+    }
+    #carrito-buscar{
+        margin-left: 30vw;
+        margin-top: 2vh;
+    }
+    .menu{
+        display: none;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:unset;
+        height:unset;
+        margin-top:unset;
+    }
+    footer div#logo-footer{
+        flex-direction: column;
+    }
+    footer .direccion {
+        margin-top: 3vh;
+        margin-left: 45vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .contacto {
+        margin-left: 30vw;
+        margin-top: 3vh;
+        flex-direction: column;
+    }
+    footer .redes {
+        margin-left: 0px;
+        margin-top: 5px;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 40vw;
+    }
+    footer ul{
+        list-style-type: none;
+        display: inline;
+    }
+    footer div#logo-footer img {
+        width:150px;
+    }
+    #galeria {
+        height: 100%;
+        margin-left: 5vw;
+        margin-bottom: 2vw;
+    }
+    #galeria img {
+        height: 300px;
+        width: 500px;
+
+    }
+    section.carousel img{
+        width: 100%;
+        height: 300px;
+    }
+    .contenedor img{
+        width: 100%;
+        height: unset;
+        margin-bottom: unset;
+    }
+    main section img{
+        margin-left: unset;
+        width:100%;
+    }
+    .centrado{
+        font-size: 30px;
+    }
+    #galeria{
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "foto1"
+                             "foto2"
+                             "foto3"
+                             "foto4";
+    }
+    .contenedor{
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "foto1"
+                             "foto2";
+        justify-content: space-evenly;
+        align-content: space-around;          
+    }
+    section.mapa {
+        margin-bottom: unset;
+    }
+}
+@media only screen and ( min-width: 768px) and ( max-width: 1200px){
+    *{
+        padding-top: 1px;
+        padding-left: 0px;
+    }
+    header{
+        overflow: visible;
+        height: 450px;
+    }
+    header div.header{
+        margin-left:0px;
+        margin-top: 0px;
+    }
+    header .redes img{
+        padding-top: 1vh;
+        width: 20px;
+    }
+    .menu-celu {
+        display: block;
+    }
+    #publicidad h1{
+        margin-top: 1vh;
+        margin-left: 12%;
+    }
+    header ul{
+        margin-top: 1vh;
+        margin-left: 20vw;
+    }
+    header .redes ul li{
+        margin-top: 0px;
+    }
+    header .redes ul li{
+        display: inline;
+    }
+    header div.header ul li a{
+        margin-left: 0px; 
+        list-style: none;    
+    }
+    #carrito-buscar{
+        margin-left: 25vw;
+        margin-top: 2vh;
+    }
+    .menu{
+        display: none;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:unset;
+        height:unset;
+        margin-top:unset;
+    }
+    footer div#logo-footer{
+        flex-direction: column;
+    }
+    footer .direccion {
+        margin-top: 3vh;
+        margin-left: 45vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .contacto {
+        margin-left: 30vw;
+        margin-top: 3vh;
+        flex-direction: column;
+    }
+    footer .redes {
+        margin-left: 0px;
+        margin-top: 5px;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 40vw;
+    }
+    footer ul{
+        list-style-type: none;
+        display: inline;
+    }
+    footer div#logo-footer img {
+        width:150px;
+    }
+    #galeria {
+        height: 100%;
+        margin-left: 5vw;
+        margin-bottom: 2vw;
+    }
+    #galeria img {
+        height: 300px;
+        width: 500px;
+
+    }
+    section.carousel img{
+        width: 100%;
+        height: 300px;
+    }
+    .contenedor img{
+        width: 100%;
+        height: unset;
+        margin-bottom: unset;
+    }
+    main section img{
+        margin-left: unset;
+        width:100%;
+    }
+    .centrado{
+        font-size: 30px;
+    }
+    #galeria{
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "foto1"
+                             "foto2"
+                             "foto3"
+                             "foto4";
+    }
+    .contenedor{
+        grid-template-columns: 90%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "foto1"
+                             "foto2";
+        justify-content: space-evenly;
+        align-content: space-around;          
+    }
+    section.mapa {
+        margin-bottom: unset;
+    }
+}
+@media only screen and ( min-width: 1200px) and (max-width: 1920px){
+    main section img {
+        margin-left: 3vw;
+    }
+    #mercaderia img{
+        justify-content: center;
+        width: 300px;
+    }
+    .mercaderia p{
+        margin-bottom: 3px;
+        font-weight:bold;
+        margin-left: 9%;
+    }
+    header .login{
+        display:flex;
+    }
+    header .login li{
+        margin-left:10px;
+    }
+    header .redes{
+        margin-top: 10px;   
+        margin-left: 1px;
+        display:flex;
+    }
+    main{
+        position: relative;
+        min-height: 50vh;
+    }
+}
+@media only screen and ( min-width: 1900px){
+    #carrito-buscar {
+        margin-left: 88%;
+    }
+    header div.header {
+        margin-left: 86%;
+    }
+    .mercaderia{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .mercaderia p{
+        margin-bottom: 3px;
+        font-weight:bold;
+        margin-left: 12%;
+    }
+    main{
+        position: relative;
+        min-height: 70vh;
+    }
+    main section img {
+        margin-left: 12vw;
+    }
+}
