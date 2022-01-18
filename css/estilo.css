@@ -38,7 +38,7 @@ header div.header ul li {
     list-style: none; 
 }
 header div.header ul li a:hover {
-    background-color: rgb(86, 95, 230);
+    background-color: rgb(33, 95, 231);
 }
 header div.carrito img{
     width: 20px;
@@ -54,12 +54,17 @@ header div.carrito {
     margin-top: 20px;
 }
 #publicidad h1{
-    color: white;
+    color: rgb(158, 243, 217);
     margin-top: -60px;
-    margin-left: 37%; 
-    font-family: monospace;
-    font-size: 20px;
+    margin-left: 33%; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;   
 }
+.animate__animated.animate__shakeX{
+    --animate-duration: 4s;
+    animation-iteration-count: 2;   
+}
+
 #carrito-buscar{
     display: flex;
     margin-left: 80%;
@@ -72,7 +77,8 @@ nav.menu ul {
     display:flex;
     list-style-type:none;
     text-align: center;
-    background-color: #0f45dd;
+    /*background-color: #0f45dd;*/
+    background-image: linear-gradient(rgb(9, 93, 172), rgb(4, 152, 179));
     padding: 10px 10px 10px;
     margin-left: 300px;
     margin-right: 300px;
@@ -88,7 +94,7 @@ nav.menu ul li a{
     text-decoration: none;
 }
 nav.menu ul li a:hover{
-    background-color: rgb(86, 95, 230);
+    background-color: rgb(33, 95, 231);
 }
 .menu-celu {
     display: none;
@@ -310,7 +316,7 @@ body{
     background-color: white;
 }
 header div.header ul li a:hover{
-    background-color: rgb(86, 95, 230);
+    background-color: rgb(33, 95, 231);
 }
 section.horarios{
     float:right;
@@ -776,5 +782,9 @@ section.mapa p{
     }
     main section img {
         margin-left: 12vw;
+    }
+    #publicidad h1{
+        margin-top: -60px;
+        margin-left: 37%; 
     }
 }
