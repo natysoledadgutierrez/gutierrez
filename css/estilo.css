@@ -53,7 +53,7 @@ header div.carrito {
     margin-left: 50px;
     margin-top: 20px;
 }
-#publicidad h1{
+#publi h1{
     color: rgb(158, 243, 217);
     margin-top: -60px;
     margin-left: 33%; 
@@ -367,7 +367,7 @@ section.mapa p{
     .menu-celu {
         display: block;
     }
-    #publicidad h1{
+    #publi h1{
         margin-top: 1vh;
         margin-left: 12%;
     }
@@ -494,7 +494,7 @@ section.mapa p{
     .menu-celu {
         display: block;
     }
-    #publicidad h1{
+    #publi h1{
         margin-top: 1vh;
         margin-left: 28%;
     }
@@ -622,7 +622,7 @@ section.mapa p{
     .menu-celu {
         display: block;
     }
-    #publicidad h1{
+    #publi h1{
         margin-top: 1vh;
         margin-left: 12%;
     }
@@ -783,7 +783,7 @@ section.mapa p{
     main section img {
         margin-left: 12vw;
     }
-    #publicidad h1{
+    #publi h1{
         margin-top: -60px;
         margin-left: 37%; 
     }
