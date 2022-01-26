@@ -47,18 +47,34 @@ header .superior {
 .nav-link {
 	color: aliceblue;
 }
-
-main {
-    margin-top: 2vh;
+main h1{
     margin-left: 2vw;
 }
+main h2{
+    margin-left: 2vw;
+}
+main p{
+    margin-left: 2vw;
+}
+main {
+
+    margin-top: 2vh;
+    /*margin-left: 2vw;*/
+}
+
+.figure{
+   
+    margin-left: 3;
+}
+
 
 .card.producto {
 	width: 18rem;
 }
 
 .card.contacto {
-	width: 50rem;
+	
+    margin-left: 2vh;
 }
 
 .card.contacto .form-control {
@@ -79,10 +95,7 @@ main {
 	flex-wrap: unset;
 }
 
-.navbar-nav {
-	display: flex;
-	margin-left: 20%;
-}
+
 
 .form-control {
 	display: flex;
@@ -111,6 +124,14 @@ justify-content-end {
 	margin-top: -180px;
 	margin-left: -5px;
 }
+.navbar-nav{
+    margin-left: 15%;
+    
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 4rem;
+    padding-left: 1rem;
+}
 
 body.colorfondo {
 	color: aliceblue;
@@ -128,6 +149,19 @@ body.colorfondo {
 .carrito {
 	margin-top: auto;
 	margin-bottom: auto;
+}
+.carousel-caption h2 {
+   font-size: calc(2.325rem + .9vw); 
+   
+   
+  
+}
+.carousel-caption h3 {
+    font-size: calc(1.2rem + .9vw); 
+ }
+.carousel-caption {  
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+    margin-bottom: 5vh;
 }
 
 .contenedores {
@@ -152,13 +186,23 @@ body.colorfondo {
 	transform: translate(-50%, -50%);
 }
 
+.centrado-izq h3 {
+	font-size: medium;
+}
+
+.centrado-der h3 {
+	font-size: medium;
+}
+
 .contenedores img {
 	width: 100%;
+   
 }
 
 .frase {
-    font-family: monospace;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 5px;
+    font-size: 20px;
 }
 
 section.mapa iframe{
@@ -180,6 +224,12 @@ section.mapa p{
 
 .row{
     width: 100%;
+    margin-left: 1vw;
+    
+}
+.col-10 {
+    width: 70%;
+    margin-left: 2vw;
 }
 
 section.horarios{
@@ -189,6 +239,10 @@ section.horarios{
     font-size: 12px;
 }
 
+ .img-fluid{
+     max-width: none;
+     
+ }   
 
 footer .redes img {
     width: 20px;
@@ -205,8 +259,15 @@ footer .redes ul li a {
 }
 
 footer {
+    position: absolute;
     width: 100%;
     padding-left: 1vw;
+    background-color:#212529;
+    color:aliceblue; 
+}
+
+.my-md-5 {
+    margin-top: unset !important;
 }
 
 footer .row {
@@ -217,11 +278,13 @@ footer .row {
 	.carousel-item img {
 		height: 600px
 	}
+    
 }
 
 @media only screen and ( min-width: 768px) and ( max-width: 1200px) {
     footer {
         padding-left: 3vw;
+        
     }
 
     section.horarios{
@@ -229,6 +292,9 @@ footer .row {
         margin-top: -20vh;
         margin-right: 10vw;
     }
+    
+    
+   
 }
 
 @media only screen and ( min-width: 600px) and ( max-width: 768px) {
@@ -238,6 +304,8 @@ footer .row {
     section.mapa {
         margin-bottom: unset;
     }
+  
+    
 }
 @media only screen and ( max-width:600px) { 
     footer {
@@ -247,4 +315,5 @@ footer .row {
     section.mapa {
         margin-bottom: unset;
     }
+    
 }
