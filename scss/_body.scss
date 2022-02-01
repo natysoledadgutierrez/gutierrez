@@ -1,0 +1,14 @@
+body{
+    &.colorfondo {
+        color: $colorLetrasHeaderyFooter;
+        background-color: $fondo ;
+    }
+
+    @media (min-width: $tablets)
+    {
+        .my-md-5 {
+            margin-top: unset!important;
+            margin-bottom: unset!important;
+        }
+    }
+}
