@@ -1,6 +1,5 @@
 header {
 	background-color:$encabezado;
-
     .superior {
         padding-top: 4px;
         padding-bottom: 4px;
@@ -33,16 +32,13 @@ header {
         font-size: medium;
         text-decoration: none;
     }
-        
     .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgb(16, 227, 235)!important;
-}
-   
+        color: rgb(16, 227, 235)!important;
+    }
     .navbar-expand-lg .navbar-nav .nav-link{
         padding-right: 4rem;
         padding-left: 1rem;
     }
-
     .navbar {
         width: $porcentajeCien;
         &-brand img {
@@ -54,13 +50,10 @@ header {
         .nav-link {
             color: $colorLetrasHeaderyFooter;
         }
-       
     }
-    
     .input-group-text {
         height: $porcentajeCien;
     }
-    
     .carrito{
         margin-top: auto;
         margin-bottom: auto;
@@ -68,7 +61,6 @@ header {
             color: aliceblue;
         }
     }
-    
     .navbar-brand img {
         width: $logoAncho; 
     }

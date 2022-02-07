@@ -4,27 +4,9 @@ footer {
     padding-left: 1vw;
     background-color:#212529;
     color:$colorLetrasHeaderyFooter;
-   
     .navbar-brand img {
         width: $logoAncho; 
     }
-    @media only screen and ( min-width: $tablets) and ( max-width: $desktop) {
-        &{
-            padding-left: $paddingMediaQuery;
-        }
-    }   
-    
-    @media only screen and ( min-width: $smartphone) and ( max-width: $tablets) {
-        &{
-            padding-left: $paddingMediaQuery;
-        }
-    }
-
-    @media only screen and ( max-width:$smartphone ) { 
-        &{
-            padding-left: $paddingMediaQuery;
-        } 
-    }   
     .redes img {
         width: 2.5vw;
         margin-top: 5px;
@@ -32,12 +14,10 @@ footer {
     .redes-zoom:hover{
         transform: scale(1.5);
     }
-    
     .redes ul li {
         display: inline;
         margin-left: 10px;
     }
-    
     .redes ul li a {
         text-decoration: unset;
     }
@@ -50,5 +30,26 @@ footer {
     .my-md-5 {
         margin-top: unset !important;
         margin-bottom: unset !important;
+    }
+    @media only screen and ( min-width: $tablets) and ( max-width: $desktop) {
+        &{
+            padding-left: $paddingMediaQuery;
+        }
+    }   
+    @media only screen and ( min-width: $smartphone) and ( max-width: $tablets) {
+        &{
+            padding-left: $paddingMediaQuery;
+        }
+    }
+    @media only screen and ( max-width:$smartphone ) { 
+        &{
+            padding-left: $paddingMediaQuery;
+        }
+        .row{
+            margin-left: 2px;
+        } 
+        .redes img {
+            width: 4.5vw;
+        }
     }
  }

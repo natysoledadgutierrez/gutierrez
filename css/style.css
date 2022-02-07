@@ -59,13 +59,15 @@ header {
     width: 150px; }
 
 main h1 {
-  margin-top: 2vh;
+  margin-top: 3vh;
   margin-left: 2vw;
+  margin-bottom: 5vh;
   font-size: xx-large; }
 
 main h2 {
   margin-left: 2vw;
-  margin-bottom: 10vh; }
+  margin-bottom: 10vh;
+  font-size: x-large; }
 
 main p {
   margin-top: 2vw; }
@@ -116,6 +118,15 @@ main .col-10 {
   width: 50%;
   margin-left: 1vw; }
 
+@media only screen and (min-width: 1200px) {
+  main .col-10 {
+    width: 50vw;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: -5vw; } }
+
 main .mapa {
   position: relative;
   display: inline-relative;
@@ -156,7 +167,7 @@ main .threed:hover {
 
 main .badge {
   margin-top: 5px;
-  margin-left: 20px;
+  margin-left: 70px;
   margin-right: 20px; }
 
 main .horarios {
@@ -172,44 +183,44 @@ main .horarios {
 
 main .text-center {
   text-align: center !important;
-  font-size: revent; }
+  font-size: 18px; }
 
 main .cart-text:last-child {
   font-size: medium; }
 
-.cuotas {
+main .cuotas {
   font-size: large;
   font-weight: 500;
   color: green; }
 
-.precios {
+main .precios {
   color: red;
   font-weight: 500; }
 
-.row {
+main .row {
   width: 100%;
   margin-left: initial; }
 
-.img-fluid {
+main .img-fluid {
   max-width: none; }
 
-.figure {
+main .figure {
   margin-left: 3px; }
 
-.card.producto {
+main .card.producto {
   width: 18rem;
   margin-top: 1rem;
   margin-left: 1rem; }
 
-.card.contacto {
+main .card.contacto {
   background: linear-gradient(#4facfe, #00f2fe);
   margin-left: 2vh; }
-  .card.contacto.contacto .form-control {
+  main .card.contacto.contacto .form-control {
     margin-bottom: 2vh; }
 
-.caja-horarios {
+main .caja-horarios {
   width: 15rem;
-  height: 9rem; }
+  height: 10rem; }
 
 footer {
   position: absolute;
@@ -219,15 +230,6 @@ footer {
   color: #c2c9cf; }
   footer .navbar-brand img {
     width: 150px; }
-  @media only screen and (min-width: 768px) and (max-width: 1200px) {
-    footer {
-      padding-left: 3vw; } }
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
-    footer {
-      padding-left: 3vw; } }
-  @media only screen and (max-width: 600px) {
-    footer {
-      padding-left: 3vw; } }
   footer .redes img {
     width: 2.5vw;
     margin-top: 5px; }
@@ -245,3 +247,16 @@ footer {
   footer .my-md-5 {
     margin-top: unset !important;
     margin-bottom: unset !important; }
+  @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    footer {
+      padding-left: 3vw; } }
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    footer {
+      padding-left: 3vw; } }
+  @media only screen and (max-width: 600px) {
+    footer {
+      padding-left: 3vw; }
+    footer .row {
+      margin-left: 2px; }
+    footer .redes img {
+      width: 4.5vw; } }

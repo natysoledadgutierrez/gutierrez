@@ -1,15 +1,16 @@
 main{
     h1{
-        margin-top: 2vh;
+        margin-top: 3vh;
         margin-left: 2vw;
+        margin-bottom: 5vh;
         font-size: xx-large;
     }
     h2{
         margin-left: 2vw;
         margin-bottom: 10vh;
+        font-size: x-large;
     }
     p{
-       
         margin-top: 2vw;
         &.informacion{
             margin-left: 2vw;
@@ -33,7 +34,6 @@ main{
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
             margin-bottom: 5vh;
         }
-        
     }
     @mixin frase ($tamanioLetraFrase, $marginFrase, $fuenteFrase) {
         font-size: $tamanioLetraFrase;
@@ -41,19 +41,16 @@ main{
         margin-top: $marginFrase;
         font-family: $fuenteFrase;
     }
-    
     .frase {
         @include frase (20px!important, 3rem, $tipoFuenteFrase);
     }
-
      .contenedores {
-         max-width: $porcentajeCien;
-         position: relative;
-         display: inline-block;
-         text-align: center;
-         font-size: large;
-         margin-bottom: 20px;
-            
+        max-width: $porcentajeCien;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        font-size: large;
+        margin-bottom: 20px;
         & img {
             width: $porcentajeCien;
         }
@@ -64,37 +61,39 @@ main{
         left: 25%;
         transform: translate(-50%, -50%);
     }
-        
     .centrado-der {
         @extend .centrado-izq;
         left: 75%;
-        
     }
     .col-10 {
         flex:auto;
         width: 50%;
         margin-left: 1vw;
     }
-        
+    @media only screen and ( min-width: $desktop) {
+        .col-10 {
+            width: 50vw;
+            flex:auto;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5vw;
+            margin-right: -5vw;
+        }
+    }
     .mapa{
         position:relative;
         display: inline-relative;
         margin-top: 5%;
-
         @media only screen and ( min-width:$smartphone ) and ( max-width: $tablets) {
             & {
                 margin-bottom: unset;
             } 
-    
         }
-
         @media only screen and ( max-width:$smartphone) { 
             &{
                 margin-bottom: unset;
             }
-            
         }
-    
         & p{
             margin-bottom: 1%;
             margin-left: 2vw;
@@ -104,7 +103,6 @@ main{
             height: 300px;
             width: $porcentajeCien;
         }
- 
     }
     .producto-zoom:hover{
         transform:scale(1.1);
@@ -115,7 +113,6 @@ main{
        box-sizing: border-box;
        text-align: center;
     }
-   
     .oferta-zoom:hover{
         transform:scale(1.1);
     }
@@ -127,19 +124,16 @@ main{
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
     }
-    
     .badge{
         margin-top: 5px; 
-        margin-left: 20px;
+        margin-left: 70px;
         margin-right: 20px;
     }
-    
     .horarios{
         width: 40%;
         margin-top: -20vh;
         margin-right: -1vw;
         font-size: 12px;
-    
         @media only screen and ( min-width: $tablets) and ( max-width: $desktop) {
             & {
                 width: 30%;
@@ -148,14 +142,12 @@ main{
             } 
         }
     }
-    
     .text-center {
         text-align: center!important;
-        font-size: revent;
+        font-size: 18px;
     }
     .cart-text:last-child {
             font-size: medium;
-        }
     } 
     .cuotas{
         font-size: large;
@@ -170,31 +162,26 @@ main{
         width: $porcentajeCien;
         margin-left: initial;
     }
-    
-     .img-fluid{
-         max-width: none;  
-     }
-     
+    .img-fluid{
+        max-width: none;  
+    }
      .figure{
         margin-left: 3px;
     }
-    
     .card.producto {
         width: 18rem;
         margin-top: 1rem;
         margin-left: 1rem;
     }
-
     .card.contacto {
         background: linear-gradient(#4facfe, #00f2fe);
         margin-left: 2vh;
-        
-    
         &.contacto .form-control {
          margin-bottom: 2vh;
         }
     }
     .caja-horarios{
         width: 15rem; 
-        height: 9rem;
+        height: 10rem;
     }
+}
