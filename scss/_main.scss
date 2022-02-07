@@ -2,12 +2,18 @@ main{
     h1{
         margin-top: 2vh;
         margin-left: 2vw;
+        font-size: xx-large;
     }
     h2{
         margin-left: 2vw;
+        margin-bottom: 10vh;
     }
     p{
-        margin-left: 2vw;
+       
+        margin-top: 2vw;
+        &.informacion{
+            margin-left: 2vw;
+        }
     }
     .carousel{
         @media only screen and ( min-width: $desktop) {
@@ -29,12 +35,15 @@ main{
         }
         
     }
+    @mixin frase ($tamanioLetraFrase, $marginFrase, $fuenteFrase) {
+        font-size: $tamanioLetraFrase;
+        margin-bottom: $marginFrase;
+        margin-top: $marginFrase;
+        font-family: $fuenteFrase;
+    }
     
     .frase {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin-top: $marginFrase;
-        font-size: 20px;
-        margin-bottom: $marginFrase;
+        @include frase (20px!important, 3rem, $tipoFuenteFrase);
     }
 
      .contenedores {
@@ -57,10 +66,14 @@ main{
     }
         
     .centrado-der {
-        position: absolute;
-        top: 50%;
+        @extend .centrado-izq;
         left: 75%;
-        transform: translate(-50%, -50%);
+        
+    }
+    .col-10 {
+        flex:auto;
+        width: 50%;
+        margin-left: 1vw;
     }
         
     .mapa{
@@ -71,13 +84,15 @@ main{
         @media only screen and ( min-width:$smartphone ) and ( max-width: $tablets) {
             & {
                 margin-bottom: unset;
-            }  
+            } 
+    
         }
 
         @media only screen and ( max-width:$smartphone) { 
             &{
                 margin-bottom: unset;
             }
+            
         }
     
         & p{
@@ -91,6 +106,22 @@ main{
         }
  
     }
+    .producto-zoom:hover{
+        transform:scale(1.1);
+    }
+    .card-body{
+       margin-top: 5vh;
+       background-color: #abb5b64d;
+       box-sizing: border-box;
+       text-align: center;
+    }
+   
+    .oferta-zoom:hover{
+        transform:scale(1.1);
+    }
+    .galeria-zoom:hover{
+        transform:scale(1.1);
+    }
     .threed:hover{
         box-shadow:$colorFormulario;
         -webkit-transform: translateX(-3px);
@@ -100,6 +131,7 @@ main{
     .badge{
         margin-top: 5px; 
         margin-left: 20px;
+        margin-right: 20px;
     }
     
     .horarios{
@@ -116,9 +148,27 @@ main{
             } 
         }
     }
+    
+    .text-center {
+        text-align: center!important;
+        font-size: revent;
+    }
+    .cart-text:last-child {
+            font-size: medium;
+        }
+    } 
+    .cuotas{
+        font-size: large;
+        font-weight: 500;
+        color:green  
+    }  
+    .precios{
+        color:red;
+        font-weight: 500;
+    }
     .row{
         width: $porcentajeCien;
-        margin-left: initial; 
+        margin-left: initial;
     }
     
      .img-fluid{
@@ -126,12 +176,15 @@ main{
      }
      
      .figure{
-        margin-left: 3;
+        margin-left: 3px;
     }
     
     .card.producto {
         width: 18rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
     }
+
     .card.contacto {
         background: linear-gradient(#4facfe, #00f2fe);
         margin-left: 2vh;
@@ -141,4 +194,7 @@ main{
          margin-bottom: 2vh;
         }
     }
-}
+    .caja-horarios{
+        width: 15rem; 
+        height: 9rem;
+    }

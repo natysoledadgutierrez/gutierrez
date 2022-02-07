@@ -26,11 +26,18 @@ header {
     .login {
         float: right;
     }
-    
+    .link-light:hover {
+        color: rgb(16, 227, 235);
+    }
     .link-light {
         font-size: medium;
+        text-decoration: none;
     }
-
+        
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(16, 227, 235)!important;
+}
+   
     .navbar-expand-lg .navbar-nav .nav-link{
         padding-right: 4rem;
         padding-left: 1rem;
@@ -47,6 +54,7 @@ header {
         .nav-link {
             color: $colorLetrasHeaderyFooter;
         }
+       
     }
     
     .input-group-text {
@@ -61,8 +69,7 @@ header {
         }
     }
     
-    .logo {
-        width: $logoAncho;
+    .navbar-brand img {
+        width: $logoAncho; 
     }
-    
 }

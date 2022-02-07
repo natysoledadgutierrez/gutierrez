@@ -4,11 +4,10 @@ footer {
     padding-left: 1vw;
     background-color:#212529;
     color:$colorLetrasHeaderyFooter;
-
-    .logo {
-        width: $logoAncho;
+   
+    .navbar-brand img {
+        width: $logoAncho; 
     }
-
     @media only screen and ( min-width: $tablets) and ( max-width: $desktop) {
         &{
             padding-left: $paddingMediaQuery;
@@ -27,8 +26,11 @@ footer {
         } 
     }   
     .redes img {
-        width: 20px;
+        width: 2.5vw;
         margin-top: 5px;
+    }
+    .redes-zoom:hover{
+        transform: scale(1.5);
     }
     
     .redes ul li {
@@ -39,10 +41,14 @@ footer {
     .redes ul li a {
         text-decoration: unset;
     }
+    &.producto{
+        margin-top: 5vh !important;
+    }
     .row {
         width: $porcentajeCien;
     }
     .my-md-5 {
         margin-top: unset !important;
+        margin-bottom: unset !important;
     }
  }
