@@ -70,7 +70,7 @@ main{
         width: 50%;
         margin-left: 1vw;
     }
-    @media only screen and ( min-width: $desktop) {
+    @media only screen and ( min-width: $desktop) and ( max-width: $fullDesktop) {
         .col-10 {
             width: 50vw;
             flex:auto;
