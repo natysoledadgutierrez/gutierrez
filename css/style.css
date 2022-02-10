@@ -146,7 +146,8 @@ main .mapa {
     width: 100%; }
 
 main .producto-zoom:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  transition-duration: 1.5s; }
 
 main .card-body {
   margin-top: 5vh;
@@ -155,15 +156,18 @@ main .card-body {
   text-align: center; }
 
 main .oferta-zoom:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  transition-duration: 1.5s; }
 
 main .galeria-zoom:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  transition-duration: 1.5s; }
 
 main .threed:hover {
   box-shadow: 1px 1px #53a7ea, 3px 3px #53a7ea, 4px 4px #53a7ea;
   -webkit-transform: translateX(-3px);
-  transform: translateX(-3px); }
+  transform: translateX(-3px);
+  transition-duration: 1s; }
 
 main .badge {
   margin-top: 5px;
