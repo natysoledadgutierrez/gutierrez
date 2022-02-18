@@ -11,9 +11,9 @@ main{
         font-size: x-large;
     }
     p{
-        margin-top: 2vw;
         &.informacion{
-            margin-left: 2vw;
+            text-align: center;
+            font-size: 15px;
         }
     }
     .carousel{
@@ -53,6 +53,7 @@ main{
         margin-bottom: 20px;
         & img {
             width: $porcentajeCien;
+            margin-bottom: 5px;
         }
     }   
     .centrado-izq {
@@ -104,6 +105,29 @@ main{
             width: $porcentajeCien;
         }
     }
+    .container-productos{
+        padding-left: 15vw;
+        @media only screen and ( min-width:$smartphone ) and ( max-width: $tablets) {
+            & {
+                padding-left: 6vw; 
+            } 
+        }
+        @media only screen and ( max-width:$smartphone) { 
+            &{
+                padding-left: 6vw;
+            }
+        }
+        @media only screen and ( max-width: $desktop){
+            & {
+                padding-left: 6vw; 
+            } 
+        }
+        @media only screen and ( min-width:$fullDesktop) {
+            & {
+                padding-left: 10vw; 
+            } 
+        }
+    }
     .producto-zoom:hover{
         transform:scale(1.1);
         transition-duration: 1.5s;
@@ -146,9 +170,11 @@ main{
             } 
         }
     }
+    .h1-contacto{
+        text-align: center;
+    }
     .text-center {
-        text-align: center!important;
-        font-size: 18px;
+        text-align: center!important; 
     }
     .cart-text:last-child {
             font-size: medium;
@@ -172,11 +198,13 @@ main{
      .figure{
         margin-left: 3px;
     }
+   
     .card.producto {
         width: 18rem;
         margin-top: 1rem;
         margin-left: 1rem;
     }
+    
     .card.contacto {
         background: linear-gradient(#4facfe, #00f2fe);
         margin-left: 2vh;
@@ -185,7 +213,8 @@ main{
         }
     }
     .caja-horarios{
-        width: 15rem; 
-        height: 10rem;
+        width: 13rem; 
+        height: 7rem;
+        font-size: smaller;
     }
 }

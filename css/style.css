@@ -69,10 +69,9 @@ main h2 {
   margin-bottom: 10vh;
   font-size: x-large; }
 
-main p {
-  margin-top: 2vw; }
-  main p.informacion {
-    margin-left: 2vw; }
+main p.informacion {
+  text-align: center;
+  font-size: 15px; }
 
 @media only screen and (min-width: 1200px) {
   main .carousel-item img {
@@ -102,7 +101,8 @@ main .contenedores {
   font-size: large;
   margin-bottom: 20px; }
   main .contenedores img {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 5px; }
 
 main .centrado-izq, main .centrado-der {
   position: absolute;
@@ -145,6 +145,21 @@ main .mapa {
     height: 300px;
     width: 100%; }
 
+main .container-productos {
+  padding-left: 15vw; }
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    main .container-productos {
+      padding-left: 6vw; } }
+  @media only screen and (max-width: 600px) {
+    main .container-productos {
+      padding-left: 6vw; } }
+  @media only screen and (max-width: 1200px) {
+    main .container-productos {
+      padding-left: 6vw; } }
+  @media only screen and (min-width: 1600px) {
+    main .container-productos {
+      padding-left: 10vw; } }
+
 main .producto-zoom:hover {
   transform: scale(1.1);
   transition-duration: 1.5s; }
@@ -185,9 +200,11 @@ main .horarios {
       margin-top: -20vh;
       margin-right: 10vw; } }
 
+main .h1-contacto {
+  text-align: center; }
+
 main .text-center {
-  text-align: center !important;
-  font-size: 18px; }
+  text-align: center !important; }
 
 main .cart-text:last-child {
   font-size: medium; }
@@ -223,8 +240,9 @@ main .card.contacto {
     margin-bottom: 2vh; }
 
 main .caja-horarios {
-  width: 15rem;
-  height: 10rem; }
+  width: 13rem;
+  height: 7rem;
+  font-size: smaller; }
 
 footer {
   position: absolute;
